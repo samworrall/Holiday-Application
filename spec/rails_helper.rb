@@ -1,10 +1,8 @@
 require 'simplecov'
+require 'simplecov-console'
 SimpleCov.start
 
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
-  SimpleCov::Formatter::HTMLFormatter,
-  SimpleCov::Formatter::Console,
-]
+SimpleCov.formatter = SimpleCov::Formatter::Console
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
